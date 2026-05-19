@@ -6,10 +6,7 @@ var swiper = new Swiper(".home", {
         delay: 3000,
         disableOnInteraction: false,
       },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
+      
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -27,4 +24,13 @@ var swiper = new Swiper(".home", {
     window.onscroll = () => {
         menu.classList.remove('bx-x');
         navbar.classList.remove('active');
+    }
+
+    let aboutToggle = document.querySelector('#about-toggle');
+    let aboutDetails = document.querySelector('.about-details');
+
+    aboutToggle.onclick = () => {
+        let isOpen = aboutDetails.classList.toggle('active');
+        aboutToggle.classList.toggle('active', isOpen);
+        aboutToggle.setAttribute('aria-expanded', isOpen);
     }

@@ -48,6 +48,10 @@ img {
 body {
     color: var(--text-color);
 }
+html, body {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
 
 header {
     position: fixed;
@@ -130,6 +134,10 @@ header {
 }
 
 /* Home Section */
+.home {
+    padding-top: 6rem;
+}
+
 .container {
     position: relative;
     width: 100%;
@@ -471,13 +479,31 @@ header {
 }
 
 .about {
+    position: relative;
     max-width: 968px;
     margin: 3rem auto;
-    padding: 0 1rem;
+    padding: 2rem 1rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(21rem, auto));
     align-items: center;
     gap: 1.5rem;
+    background: url("Images/about-bg.jpg") center / cover no-repeat;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.about::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: rgba(255, 255, 255, 0.649);
+}
+
+.about img,
+.about-text {
+    position: relative;
+    z-index: 1;
 }
 
 .about-text span {
@@ -493,11 +519,46 @@ header {
     margin: 0.5rem 0 1.5rem;
 }
 
-.about-text p {
+.about-details {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(-8px) scale(0.98);
+    transform-origin: top center;
+    transition:
+        max-height 0.45s ease,
+        opacity 0.3s ease,
+        transform 0.35s ease;
+}
+
+.about-details.active {
+    max-height: 520px;
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+.about-details p {
     font-size: 1rem;
     font-weight: 400;
     color: var(--text-color);
     margin: 0.5rem 0 1rem;
+}
+
+#about-toggle {
+    width: max-content;
+    min-width: 160px;
+    margin: 1.25rem auto 0;
+    border: 0;
+    appearance: none;
+    cursor: pointer;
+}
+
+#about-toggle .bx {
+    transition: transform 0.3s ease;
+}
+
+#about-toggle.active .bx {
+    transform: rotate(90deg);
 }
 
 .customers {
@@ -764,9 +825,17 @@ header {
     .about-text {
         padding: 0 50px;
     }
+
+    .about-text .btn {
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 852px) {
+    body {
+        padding-top: 92px;
+    }
+
     header {
         padding: 12px 4%;
     }
@@ -777,9 +846,9 @@ header {
 
     .navbar {
         position: absolute;
-        top: -570px;
-        right: 0;
-        left: 0;
+        top: 100%;
+        right: -220px;
+        left: auto;
         display: flex;
         width: 200px;
         height: 100vh;
@@ -793,7 +862,7 @@ header {
     }
 
     .navbar.active {
-        top: 100%;
+        right: 0;
     }
 
     .navbar a {
@@ -815,6 +884,14 @@ header {
 
     .home-text {
         padding: 0 50px;
+    }
+
+    .home-text .btn {
+        margin: 0 auto;
+    }
+
+    .home {
+        padding-top: 1.5rem;
     }
 
     .home .home-text h1 {
@@ -850,6 +927,10 @@ header {
 
     section {
         padding: 50px 4%;
+    }
+
+    .home {
+        padding-top: 1.5rem;
     }
 
     .categories-container {
