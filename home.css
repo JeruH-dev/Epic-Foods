@@ -217,6 +217,118 @@ header {
     transition: 0.2s ease;
 }
 
+.auth-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+    background: rgba(26, 36, 40, 0.55);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+}
+
+.auth-modal.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.auth-box {
+    position: relative;
+    width: min(100%, 420px);
+    padding: 2rem;
+    border-radius: 0.75rem;
+    background: var(--bg-color);
+    box-shadow: 0 18px 45px rgba(14, 55, 54, 0.25);
+    transform: translateY(18px) scale(0.96);
+    transition: transform 0.25s ease;
+}
+
+.auth-modal.active .auth-box {
+    transform: translateY(0) scale(1);
+}
+
+.auth-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: grid;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    border: 0;
+    border-radius: 50%;
+    background: #e9f4e3;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.auth-close .bx {
+    font-size: 1.4rem;
+}
+
+.auth-box h2 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.auth-tabs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.auth-tab {
+    padding: 0.7rem 1rem;
+    border: 1px solid rgba(47, 132, 50, 0.25);
+    border-radius: 5rem;
+    background: transparent;
+    color: var(--text-color);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.auth-tab.active {
+    background: var(--primary-color);
+    color: var(--bg-color);
+}
+
+.auth-form {
+    display: none;
+    flex-direction: column;
+    row-gap: 0.85rem;
+}
+
+.auth-form.active {
+    display: flex;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    border: 1px solid rgba(47, 132, 50, 0.25);
+    border-radius: 0.5rem;
+    outline: none;
+    font-size: 0.95rem;
+}
+
+.auth-form input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.16);
+}
+
+.auth-submit {
+    width: 100%;
+    max-width: none;
+    justify-content: center;
+    border: 0;
+    cursor: pointer;
+}
+
 .swiper-button-next {
     background-image: url();
     background-repeat: no-repeat;
