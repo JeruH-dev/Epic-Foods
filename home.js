@@ -3,13 +3,34 @@ var swiper = new Swiper(".home", {
       spaceBetween: 30,
       centeredSlides: true,
       autoplay: {
-        delay: 3000,
+        delay: 4000,
         disableOnInteraction: false,
       },
       
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+      },
+    });
+
+    var customerSwiper = new Swiper(".customer-swiper", {
+      loop: true,
+      spaceBetween: 24,
+      speed: 5500,
+      autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        640: {
+          slidesPerView: 2,
+        },
+        920: {
+          slidesPerView: 3,
+        },
       },
     });
 
