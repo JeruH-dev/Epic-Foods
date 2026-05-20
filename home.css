@@ -98,8 +98,12 @@ header {
 }
 
 .logo .bx {
-    font-size: 1.5rem;
-    color: var(--orange-color);
+    font-size: 2rem;
+    background: linear-gradient(135deg, var(--orange-color), var(--primary-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 
 .navbar {
@@ -1050,7 +1054,7 @@ header {
     }
 
     .home {
-        padding-top: 1.5rem;
+        padding-top: 1rem;
     }
 
     .categories-container {
@@ -1059,6 +1063,11 @@ header {
 
     .products-container {
         grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    }
+
+    .products-details {
+        justify-items: center;
+        text-align: center;
     }
 
     .about {
@@ -1071,7 +1080,11 @@ header {
     }
 
     .home-text h1 {
-        font-size: 1.5rem;
+        font-size: 1rem;
+    }
+
+    .swiper-slide img {
+        max-height: 50%;
     }
 
     .swiper-button-next,
