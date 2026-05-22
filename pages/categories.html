@@ -5,22 +5,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cart | EpicFoods</title>
+  <title>Categories | EpicFoods</title>
   <link rel="stylesheet" href="home.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 </head>
 
 <body>
   <header>
-    <a href="home.html" class="logo"><i class="bx bxs-basket"></i>Epic_Foods</a>
+    <a href="index.html" class="logo"><i class="bx bxs-basket"></i>Epic_Foods</a>
     <ul class="navbar">
-      <li><a href="home.html">Home</a></li>
-      <li><a href="categories.html">Categories</a></li>
-      <li><a href="products.html">Products</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="wishlist.html">Wishlist <span class="nav-badge" data-wishlist-count>0</span></a></li>
-      <li><a href="cart.html">Cart <span class="nav-badge" data-cart-count>0</span></a></li>
-      <li><a href="order.html">Order</a></li>
+      <li><a href="pages/home.html">Home</a></li>
+      <li><a href="pages/categories.html">Categories</a></li>
+      <li><a href="pages/products.html">Products</a></li>
+      <li><a href="pages/about.html">About</a></li>
+      <li><a href="pages/wishlist.html">Wishlist <span class="nav-badge" data-wishlist-count>0</span></a></li>
+      <li><a href="pages/cart.html">Cart <span class="nav-badge" data-cart-count>0</span></a></li>
+      <li><a href="pages/order.html">Order</a></li>
     </ul>
     <div class="profile" id="profile-trigger" role="button" tabindex="0" aria-haspopup="dialog"
       aria-controls="auth-modal">
@@ -55,32 +55,31 @@
   </div>
 
   <main class="page-main">
-    <section class="page-hero compact">
+    <section class="page-hero">
       <div class="page-hero-copy">
-        <span>Shopping cart</span>
-        <h1>Review your fresh food order</h1>
-        <p>Adjust quantities before moving to checkout.</p>
-        <a href="products.html" class="btn">Keep Shopping<i class="bx bx-right-arrow-alt"></i></a>
+        <span>Shop by category</span>
+        <h1>Fresh food sections for every kind of order</h1>
+        <p>Browse fruit juice, healthy food, vegetables, spices, meat, seafood, dairy, and other fresh essentials from one organized catalog.</p>
+        <a href="pproducts.html" class="btn">View Products<i class="bx bx-right-arrow-alt"></i></a>
       </div>
-      <img src="Images/broccoli.webp" alt="Broccoli crowns">
+      <img src="Images/category 4.webp" alt="Fresh vegetables category">
     </section>
 
-    <section class="commerce-layout">
-      <div class="commerce-list" data-cart-list></div>
-      <aside class="summary-panel">
-        <h2>Order Summary</h2>
-        <div data-cart-summary></div>
-        <a href="order.html" class="btn checkout-btn" data-checkout-button>Checkout<i class="bx bx-right-arrow-alt"></i></a>
-      </aside>
+    <section class="categories directory-section">
+      <div class="heading">
+        <h2>All <span>Categories</span></h2>
+        <a href="pages/products.html" class="btn">Shop All<i class="bx bx-right-arrow-alt"></i></a>
+      </div>
+      <div class="categories-container directory-categories" data-category-grid></div>
     </section>
   </main>
 
   <section class="footer" id="footer">
     <div class="footer-box">
-      <a href="home.html" class="logo"><i class="bx bxs-basket"></i>Epic_Foods</a>
+      <a href="index.html" class="logo"><i class="bx bxs-basket"></i>Epic_Foods</a>
       <p>18 Ibesikpo Street, Uyo, Akwa Ibom</p>
       <div class="socials">
-        <a href="https://www.facebook.com/" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.facebook.com/epicfoods0/" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
         <a href="https://www.tiktok.com/" aria-label="TikTok"><i class="bx bxl-tiktok"></i></a>
         <a href="https://www.instagram.com/" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
         <a href="https://www.linkedin.com/" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
@@ -88,19 +87,19 @@
     </div>
     <div class="footer-box">
       <h2>Categories</h2>
-      <a href="products.html?category=fruit-juice">Fruit Juice</a>
-      <a href="products.html?category=healthy-food">Healthy Food</a>
-      <a href="products.html?category=vegetables">Fruits & Vegetables</a>
-      <a href="products.html?category=drinks">Drinks</a>
-      <a href="products.html?category=spices">Spices</a>
+      <a href="pages/products.html?category=fruit-juice">Fruit Juice</a>
+      <a href="pages/products.html?category=healthy-food">Healthy Food</a>
+      <a href="pages/products.html?category=vegetables">Fruits & Vegetables</a>
+      <a href="pages/products.html?category=drinks">Drinks</a>
+      <a href="pages/products.html?category=spices">Spices</a>
     </div>
     <div class="footer-box">
       <h2>Useful Links</h2>
-      <a href="cart.html">Payment Options</a>
-      <a href="order.html">Delivery Information</a>
-      <a href="about.html">Terms & Conditions</a>
-      <a href="about.html">My Blogs</a>
-      <a href="about.html">Return Policy</a>
+      <a href="pages/cart.html">Payment Options</a>
+      <a href="pages/order.html">Delivery Information</a>
+      <a href="pages/about.html">Terms & Conditions</a>
+      <a href="pages/about.html">My Blogs</a>
+      <a href="pages/about.html">Return Policy</a>
     </div>
     <div class="footer-box">
       <h2>Newsletter</h2>

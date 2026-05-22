@@ -5,22 +5,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Products | EpicFoods</title>
+  <title>Wishlist | EpicFoods</title>
   <link rel="stylesheet" href="home.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 </head>
 
 <body>
   <header>
-    <a href="home.html" class="logo"><i class="bx bxs-basket"></i>Epic_Foods</a>
+    <a href="index.html" class="logo"><i class="bx bxs-basket"></i>Epic_Foods</a>
     <ul class="navbar">
-      <li><a href="home.html">Home</a></li>
-      <li><a href="categories.html">Categories</a></li>
-      <li><a href="products.html">Products</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="wishlist.html">Wishlist <span class="nav-badge" data-wishlist-count>0</span></a></li>
-      <li><a href="cart.html">Cart <span class="nav-badge" data-cart-count>0</span></a></li>
-      <li><a href="order.html">Order</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="pages/categories.html">Categories</a></li>
+      <li><a href="pages/products.html">Products</a></li>
+      <li><a href="pages/about.html">About</a></li>
+      <li><a href="pages/wishlist.html">Wishlist <span class="nav-badge" data-wishlist-count>0</span></a></li>
+      <li><a href="pages/cart.html">Cart <span class="nav-badge" data-cart-count>0</span></a></li>
+      <li><a href="pages/order.html">Order</a></li>
     </ul>
     <div class="profile" id="profile-trigger" role="button" tabindex="0" aria-haspopup="dialog"
       aria-controls="auth-modal">
@@ -55,55 +55,31 @@
   </div>
 
   <main class="page-main">
-    <section class="page-hero">
+    <section class="page-hero compact">
       <div class="page-hero-copy">
-        <span>Fresh catalog</span>
-        <h1>Products ready for same-day food shopping</h1>
-        <p>Search, filter, wishlist, and add items to cart from a complete product directory.</p>
-        <a href="cart.html" class="btn">View Cart<i class="bx bx-cart-alt"></i></a>
+        <span>Saved items</span>
+        <h1>Your wishlist</h1>
+        <p>Keep favorite products here, then move them to your cart when you are ready.</p>
+        <a href="pages/products.html" class="btn">Browse More<i class="bx bx-right-arrow-alt"></i></a>
       </div>
-      <img src="Images/tomato.webp" alt="Fresh tomatoes">
+      <img src="Images/pear.webp" alt="Sweet pears">
     </section>
 
     <section class="products directory-section">
       <div class="heading">
-        <h2>Shop <span>Products</span></h2>
-        <strong class="result-count" data-product-count>0 products</strong>
+        <h2>Wishlist <span>Items</span></h2>
+        <a href="pages/cart.html" class="btn">View Cart<i class="bx bx-cart-alt"></i></a>
       </div>
-
-      <div class="store-controls">
-        <label>
-          <span>Search</span>
-          <input type="search" data-product-search placeholder="Search products">
-        </label>
-        <label>
-          <span>Category</span>
-          <select data-category-filter>
-            <option value="all">All Categories</option>
-          </select>
-        </label>
-        <label>
-          <span>Sort</span>
-          <select data-product-sort>
-            <option value="featured">Featured</option>
-            <option value="price-low">Price: Low to High</option>
-            <option value="price-high">Price: High to Low</option>
-            <option value="name">Name</option>
-          </select>
-        </label>
-      </div>
-
-      <div class="product-spotlight" data-product-spotlight></div>
-      <div class="products-container" data-products-grid></div>
+      <div class="products-container" data-wishlist-list></div>
     </section>
   </main>
 
   <section class="footer" id="footer">
     <div class="footer-box">
-      <a href="home.html" class="logo"><i class="bx bxs-basket"></i>Epic_Foods</a>
+      <a href="index.html" class="logo"><i class="bx bxs-basket"></i>Epic_Foods</a>
       <p>18 Ibesikpo Street, Uyo, Akwa Ibom</p>
       <div class="socials">
-        <a href="https://www.facebook.com/" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.facebook.com/epicfoods0/" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
         <a href="https://www.tiktok.com/" aria-label="TikTok"><i class="bx bxl-tiktok"></i></a>
         <a href="https://www.instagram.com/" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
         <a href="https://www.linkedin.com/" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
@@ -111,19 +87,19 @@
     </div>
     <div class="footer-box">
       <h2>Categories</h2>
-      <a href="products.html?category=fruit-juice">Fruit Juice</a>
-      <a href="products.html?category=healthy-food">Healthy Food</a>
-      <a href="products.html?category=vegetables">Fruits & Vegetables</a>
-      <a href="products.html?category=drinks">Drinks</a>
-      <a href="products.html?category=spices">Spices</a>
+      <a href="pages/products.html?category=fruit-juice">Fruit Juice</a>
+      <a href="pages/products.html?category=healthy-food">Healthy Food</a>
+      <a href="pages/products.html?category=vegetables">Fruits & Vegetables</a>
+      <a href="pages/products.html?category=drinks">Drinks</a>
+      <a href="pages/products.html?category=spices">Spices</a>
     </div>
     <div class="footer-box">
       <h2>Useful Links</h2>
-      <a href="cart.html">Payment Options</a>
-      <a href="order.html">Delivery Information</a>
-      <a href="about.html">Terms & Conditions</a>
-      <a href="about.html">My Blogs</a>
-      <a href="about.html">Return Policy</a>
+      <a href="pages/cart.html">Payment Options</a>
+      <a href="pages/order.html">Delivery Information</a>
+      <a href="pages/about.html">Terms & Conditions</a>
+      <a href="pages/about.html">My Blogs</a>
+      <a href="pages/about.html">Return Policy</a>
     </div>
     <div class="footer-box">
       <h2>Newsletter</h2>
