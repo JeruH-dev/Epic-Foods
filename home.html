@@ -18,20 +18,22 @@
 <body>
   <!--Navbar-->
   <header>
-    <a href="#" class="logo"><i class="bx bxs-basket"></i>Epic_Foods</a>
+    <a href="home.html" class="logo"><i class="bx bxs-basket"></i>Epic_Foods</a>
     <!--Menu-->
     <!--Nav List-->
     <ul class="navbar">
-      <li><a href="#home" class="home-active">Home</a></li>
-      <li><a href="#categories">Categories</a></li>
-      <li><a href="#products">Products</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#customers">Customers</a></li>
+      <li><a href="home.html" class="home-active">Home</a></li>
+      <li><a href="categories.html">Categories</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="wishlist.html">Wishlist <span class="nav-badge" data-wishlist-count>0</span></a></li>
+      <li><a href="cart.html">Cart <span class="nav-badge" data-cart-count>0</span></a></li>
+      <li><a href="order.html">Order</a></li>
     </ul>
     <!--Profile-->
     <div class="profile" id="profile-trigger" role="button" tabindex="0" aria-haspopup="dialog"
       aria-controls="auth-modal">
-      <img src="Images/profile.jpg" alt="profile picture">
+      <img src="Images/profile.webp" alt="profile picture">
       <span>Abdul Kareem</span>
       <i class="bx bx-caret-down"></i>
     </div>
@@ -68,9 +70,9 @@
         <div class="home-text">
           <span>Welcome to EpicFoods</span>
           <h1>Choose delicacy <br> The best healthy food <br>Fruit juice/drinks <br> Delivered Fast</h1>
-          <a href="#" class="btn">Shop Now<i class="bx bx-right-arrow-alt"></i></a>
+          <a href="products.html" class="btn">Shop Now<i class="bx bx-right-arrow-alt"></i></a>
         </div>
-        <img src="Images/slide 1.jpg" alt="Epic Foods drink slide 1" height="600px" width="100%">
+        <img src="Images/slide 1.webp" alt="Epic Foods drink slide 1" height="600px" width="100%">
       </div>
 
       <!--slide 2-->
@@ -78,9 +80,9 @@
         <div class="home-text">
           <span>Welcome to EpicFoods</span>
           <h1>Choose delicacy <br> The best healthy food <br>Fruit juice/drinks <br> Delivered Fast</h1>
-          <a href="#" class="btn">Shop Now<i class="bx bx-right-arrow-alt"></i></a>
+          <a href="products.html" class="btn">Shop Now<i class="bx bx-right-arrow-alt"></i></a>
         </div>
-        <img src="Images/slide 2.jpg" alt="Healthy food slide 2" height="600px" width="100%">
+        <img src="Images/slide 2.webp" alt="Healthy food slide 2" height="600px" width="100%">
       </div>
 
       <!--slide 3-->
@@ -88,9 +90,9 @@
         <div class="home-text">
           <span>Welcome to EpicFoods</span>
           <h1>Choose delicacy <br> The best healthy food <br>Fruit juice/drinks <br> Delivered Fast</h1>
-          <a href="#" class="btn">Shop Now<i class="bx bx-right-arrow-alt"></i></a>
+          <a href="products.html" class="btn">Shop Now<i class="bx bx-right-arrow-alt"></i></a>
         </div>
-        <img src="Images/slide 3.jpg" alt="Epic Foods drink slide 3" height="600px" width="100%">
+        <img src="Images/slide 3.webp" alt="Epic Foods drink slide 3" height="600px" width="100%">
       </div>
 
       <!--slide 4-->
@@ -98,9 +100,9 @@
         <div class="home-text">
           <span>Welcome to EpicFoods</span>
           <h1>Choose delicacy <br> The best healthy food <br>Fruit juice/drinks <br> Delivered Fast</h1>
-          <a href="#" class="btn">Shop Now<i class="bx bx-right-arrow-alt"></i></a>
+          <a href="products.html" class="btn">Shop Now<i class="bx bx-right-arrow-alt"></i></a>
         </div>
-        <img src="Images/slide 4.jpg" alt="Epic Foods drink slide 4" height="600px" width="100%">
+        <img src="Images/slide 4.webp" alt="Epic Foods drink slide 4" height="600px" width="100%">
       </div>
 
       <!--slide 5-->
@@ -108,9 +110,9 @@
         <div class="home-text">
           <span>Welcome to EpicFoods</span>
           <h1>Choose delicacy <br> The best healthy food <br>Fruit juice/drinks <br> Delivered Fast</h1>
-          <a href="#" class="btn">Shop Now<i class="bx bx-right-arrow-alt"></i></a>
+          <a href="products.html" class="btn">Shop Now<i class="bx bx-right-arrow-alt"></i></a>
         </div>
-        <img src="Images/slide 5.jpg" alt="Healthy food slide 5" height="600px" width="100%">
+        <img src="Images/slide 5.webp" alt="Healthy food slide 5" height="600px" width="100%">
       </div>
     </div>
     <div class="swiper-button-next"></div>
@@ -121,71 +123,71 @@
   <section class="categories" id="categories">
     <div class="heading">
       <h2>Browse Our Hottest <br><span>Categories</span></h2>
-      <a href="#" class="btn">View All<i class="bx bx-right-arrow-alt"></i></a>
+      <a href="categories.html" class="btn">View All<i class="bx bx-right-arrow-alt"></i></a>
     </div>
     <!--Categories Container-->
     <div class="categories-container">
       <!--Categories Box 1-->
-      <div class="categories-box box1">
-        <img src="Images/category 1.jpg" alt="Fruit Juice category 1">
+      <a class="categories-box box1" href="products.html?category=fruit-juice">
+        <img src="Images/category 1.webp" alt="Fruit Juice category 1">
         <h3>Fruit Juice</h3>
         <i class="bx bx-right-arrow-alt"></i>
-      </div>
+      </a>
       <!--Categories Box 2-->
-      <div class="categories-box box2">
-        <img src="Images/category 2.jpg" alt="Healthy Food category 2">
+      <a class="categories-box box2" href="products.html?category=healthy-food">
+        <img src="Images/category 2.webp" alt="Healthy Food category 2">
         <h3>Healthy Food</h3>
         <i class="bx bx-right-arrow-alt"></i>
-      </div>
+      </a>
       <!--Categories Box 3-->
-      <div class="categories-box box3">
-        <img src="Images/category 3.jpg" alt="Fruits category 3" width="150px">
+      <a class="categories-box box3" href="products.html?category=fruits">
+        <img src="Images/category 3.webp" alt="Fruits category 3" width="150px">
         <h3>Fruits</h3>
         <i class="bx bx-right-arrow-alt"></i>
-      </div>
+      </a>
       <!--Categories Box 4-->
-      <div class="categories-box box4">
-        <img src="Images/category 4.jpg" alt="Vegetables category 4" width="150px">
+      <a class="categories-box box4" href="products.html?category=vegetables">
+        <img src="Images/category 4.webp" alt="Vegetables category 4" width="150px">
         <h3>Vegetables</h3>
         <i class="bx bx-right-arrow-alt"></i>
-      </div>
+      </a>
       <!--Categories Box 5-->
-      <div class="categories-box box5">
-        <img src="Images/category 5.jpg" alt="Drinks category 5">
+      <a class="categories-box box5" href="products.html?category=drinks">
+        <img src="Images/category 5.webp" alt="Drinks category 5">
         <h3>Drinks</h3>
         <i class="bx bx-right-arrow-alt"></i>
-      </div>
+      </a>
       <!--Categories Box 6-->
-      <div class="categories-box box6">
-        <img src="Images/category 6.jpg" alt="Spices category 6">
+      <a class="categories-box box6" href="products.html?category=spices">
+        <img src="Images/category 6.webp" alt="Spices category 6">
         <h3>Spices</h3>
         <i class="bx bx-right-arrow-alt"></i>
-      </div>
+      </a>
       <!--Categories Box 7-->
-      <div class="categories-box box7">
-        <img src="Images/category 7.jpg" alt="Meat category 7">
+      <a class="categories-box box7" href="products.html?category=meat">
+        <img src="Images/category 7.webp" alt="Meat category 7">
         <h3>Meat</h3>
         <i class="bx bx-right-arrow-alt"></i>
-      </div>
+      </a>
       <!--Categories Box 8-->
-      <div class="categories-box box8">
-        <img src="Images/category 8.jpg" alt="Seafood category 8">
+      <a class="categories-box box8" href="products.html?category=seafood">
+        <img src="Images/category 8.webp" alt="Seafood category 8">
         <h3>Seafood</h3>
         <i class="bx bx-right-arrow-alt"></i>
-      </div>
+      </a>
       <!--Categories Box 9-->
-      <div class="categories-box box9">
-        <img src="Images/category 9.jpg" alt="Dairy category 9">
+      <a class="categories-box box9" href="products.html?category=dairy">
+        <img src="Images/category 9.webp" alt="Dairy category 9">
         <h3>Dairy</h3>
         <i class="bx bx-right-arrow-alt"></i>
-      </div>
+      </a>
     </div>
   </section>
   <!--Products Section-->
   <section class="products" id="products">
     <div class="heading">
       <h2>Explore Our Newest <br><span>Products</span></h2>
-      <a href="#" class="btn">View All<i class="bx bx-right-arrow-alt"></i></a>
+      <a href="products.html" class="btn">View All<i class="bx bx-right-arrow-alt"></i></a>
     </div>
     <!--Products Container-->
     <div class="products-container">
@@ -195,21 +197,21 @@
         <div class="product-details">
           <span>Fresh Items</span>
           <h2>Tomatoes</h2>
-          <h3 class="price">$19.99<span>/kg</span></h3>
-          <i class="bx bx-cart-alt"></i>
-          <i class="bx bx-heart"></i>
+          <h3 class="price">NGN 4,200<span>/basket</span></h3>
+          <button class="icon-btn cart-action" type="button" data-add-cart="tomatoes" aria-label="Add Tomatoes to cart"><i class="bx bx-cart-alt"></i></button>
+          <button class="icon-btn wishlist-action" type="button" data-wishlist="tomatoes" aria-label="Add Tomatoes to wishlist"><i class="bx bx-heart"></i></button>
           <span class="discount">-25%</span>
         </div>
       </div>
       <!--Products Box 2-->
       <div class="products-box box2">
-        <img src="Images/vegetable.jpg" alt="Product 2">
+        <img src="Images/vegetable.webp" alt="Product 2">
         <div class="product-details">
           <span>Fresh Items</span>
           <h2>Vegetables</h2>
-          <h3 class="price">$29.99<span>/kg</span></h3>
-          <i class="bx bx-cart-alt"></i>
-          <i class="bx bx-heart"></i>
+          <h3 class="price">NGN 3,500<span>/pack</span></h3>
+          <button class="icon-btn cart-action" type="button" data-add-cart="mixed-vegetables" aria-label="Add Vegetables to cart"><i class="bx bx-cart-alt"></i></button>
+          <button class="icon-btn wishlist-action" type="button" data-wishlist="mixed-vegetables" aria-label="Add Vegetables to wishlist"><i class="bx bx-heart"></i></button>
           <span class="discount">-25%</span>
         </div>
       </div>
@@ -219,9 +221,9 @@
         <div class="product-details">
           <span>Fresh Items</span>
           <h2>Prawns</h2>
-          <h3 class="price">$35.99<span>/kg</span></h3>
-          <i class="bx bx-cart-alt"></i>
-          <i class="bx bx-heart"></i>
+          <h3 class="price">NGN 9,500<span>/kg</span></h3>
+          <button class="icon-btn cart-action" type="button" data-add-cart="prawns" aria-label="Add Prawns to cart"><i class="bx bx-cart-alt"></i></button>
+          <button class="icon-btn wishlist-action" type="button" data-wishlist="prawns" aria-label="Add Prawns to wishlist"><i class="bx bx-heart"></i></button>
           <span class="discount">-25%</span>
         </div>
       </div>
@@ -231,45 +233,45 @@
         <div class="product-details">
           <span>Fresh Items</span>
           <h2>Broccoli</h2>
-          <h3 class="price">$30.99<span>/kg</span></h3>
-          <i class="bx bx-cart-alt"></i>
-          <i class="bx bx-heart"></i>
+          <h3 class="price">NGN 5,200<span>/bundle</span></h3>
+          <button class="icon-btn cart-action" type="button" data-add-cart="broccoli" aria-label="Add Broccoli to cart"><i class="bx bx-cart-alt"></i></button>
+          <button class="icon-btn wishlist-action" type="button" data-wishlist="broccoli" aria-label="Add Broccoli to wishlist"><i class="bx bx-heart"></i></button>
           <span class="discount">-25%</span>
         </div>
       </div>
       <!--Products Box 5-->
       <div class="products-box box5">
-        <img src="Images/pear.jpg" alt="Product 5">
+        <img src="Images/pear.webp" alt="Product 5">
         <div class="product-details">
           <span>Fresh Items</span>
           <h2>Pears</h2>
-          <h3 class="price">$25.99<span>/kg</span></h3>
-          <i class="bx bx-cart-alt"></i>
-          <i class="bx bx-heart"></i>
+          <h3 class="price">NGN 4,800<span>/kg</span></h3>
+          <button class="icon-btn cart-action" type="button" data-add-cart="pears" aria-label="Add Pears to cart"><i class="bx bx-cart-alt"></i></button>
+          <button class="icon-btn wishlist-action" type="button" data-wishlist="pears" aria-label="Add Pears to wishlist"><i class="bx bx-heart"></i></button>
           <span class="discount">-25%</span>
         </div>
       </div>
       <!--Products Box 6-->
       <div class="products-box box6">
-        <img src="Images/ginger.jpg" alt="Product 6">
+        <img src="Images/ginger.webp" alt="Product 6">
         <div class="product-details">
           <span>Fresh Items</span>
           <h2>Ginger</h2>
-          <h3 class="price">$12.99<span>/kg</span></h3>
-          <i class="bx bx-cart-alt"></i>
-          <i class="bx bx-heart"></i>
+          <h3 class="price">NGN 2,200<span>/pack</span></h3>
+          <button class="icon-btn cart-action" type="button" data-add-cart="ginger" aria-label="Add Ginger to cart"><i class="bx bx-cart-alt"></i></button>
+          <button class="icon-btn wishlist-action" type="button" data-wishlist="ginger" aria-label="Add Ginger to wishlist"><i class="bx bx-heart"></i></button>
           <span class="discount">-25%</span>
         </div>
       </div>
         <!--Products Box 7-->
       <div class="products-box box7">
-        <img src="Images/garlic.jpg" alt="Product 7">
+        <img src="Images/garlic.webp" alt="Product 7">
         <div class="product-details">
           <span>Fresh Items</span>
           <h2>Garlic</h2>
-          <h3 class="price">$10.99<span>/kg</span></h3>
-          <i class="bx bx-cart-alt"></i>
-          <i class="bx bx-heart"></i>
+          <h3 class="price">NGN 1,800<span>/pack</span></h3>
+          <button class="icon-btn cart-action" type="button" data-add-cart="garlic" aria-label="Add Garlic to cart"><i class="bx bx-cart-alt"></i></button>
+          <button class="icon-btn wishlist-action" type="button" data-wishlist="garlic" aria-label="Add Garlic to wishlist"><i class="bx bx-heart"></i></button>
           <span class="discount">-25%</span>
         </div>
       </div>
@@ -277,7 +279,7 @@
   </section>
   <!--About Section-->
   <section class="about" id="about">
-    <!--<img src="Images/about img.jpg" alt="About Image"> -->
+    <!--<img src="Images/about img.webp" alt="About Image"> -->
     <div class="about-text">
       <h2>About Us</h2>
       <h3><span>Welcome to our store! We are dedicated to providing the freshest and highest quality products to our
@@ -315,7 +317,7 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua.</p>
           <div class="review-profile">
-            <img src="Images/customer 1.jpg" alt="Customer 1">
+            <img src="Images/customer 1.webp" alt="Customer 1">
             <h3>Ememobong Ntia</h3>
           </div>
         </div>
@@ -332,7 +334,7 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua.</p>
           <div class="review-profile">
-            <img src="Images/customer 2.jpg" alt="Customer 2">
+            <img src="Images/customer 2.webp" alt="Customer 2">
             <h3>Nathalie Josh</h3>
           </div>
         </div>
@@ -349,7 +351,7 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua.</p>
           <div class="review-profile">
-            <img src="Images/customer 3.jpg" alt="Customer 3">
+            <img src="Images/customer 3.webp" alt="Customer 3">
             <h3>Aisha Suleman</h3>
           </div>
         </div>
@@ -366,7 +368,7 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua.</p>
           <div class="review-profile">
-            <img src="Images/customer 4.jpg" alt="Customer 4">
+            <img src="Images/customer 4.webp" alt="Customer 4">
             <h3>Peter Johnson</h3>
           </div>
         </div>
@@ -383,7 +385,7 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua.</p>
           <div class="review-profile">
-            <img src="Images/customer 5.jpg" alt="Customer 5">
+            <img src="Images/customer 5.webp" alt="Customer 5">
             <h3>Janet Smith</h3>
           </div>
         </div>
@@ -393,30 +395,30 @@
   <!--Footer Section-->
   <section class="footer" id="footer">
     <div class="footer-box">
-      <a href="#" class="logo"><i class="bx bxs-basket"></i>Epic_Foods</a>
+      <a href="home.html" class="logo"><i class="bx bxs-basket"></i>Epic_Foods</a>
       <p>18 Ibesikpo Street, Uyo, Akwa Ibom</p>
       <div class="socials">
-        <a href="#"><i class="bx bxl-facebook"></i></a>
-        <a href="#"><i class="bx bxl-tiktok"></i></a>
-        <a href="#"><i class="bx bxl-instagram"></i></a>
-        <a href="#"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://www.facebook.com/" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.tiktok.com/" aria-label="TikTok"><i class="bx bxl-tiktok"></i></a>
+        <a href="https://www.instagram.com/" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="https://www.linkedin.com/" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
       </div>
     </div>
     <div class="footer-box">
       <h2>Categories</h2>
-      <a href="#">Fruit Juice</a>
-      <a href="#">Healthy Food</a>
-      <a href="#">Fruits & Vegetables</a>
-      <a href="#">Drinks</a>
-      <a href="#">Spices</a>
+      <a href="products.html?category=fruit-juice">Fruit Juice</a>
+      <a href="products.html?category=healthy-food">Healthy Food</a>
+      <a href="products.html?category=vegetables">Fruits & Vegetables</a>
+      <a href="products.html?category=drinks">Drinks</a>
+      <a href="products.html?category=spices">Spices</a>
     </div>
     <div class="footer-box">
       <h2>Useful Links</h2>
-      <a href="#">Payment Options</a>
-      <a href="#">Delivery Information</a>
-      <a href="#">Terms & Conditions</a>
-      <a href="#">My Blogs</a>
-      <a href="#">Return Policy</a>
+      <a href="cart.html">Payment Options</a>
+      <a href="order.html">Delivery Information</a>
+      <a href="about.html">Terms & Conditions</a>
+      <a href="about.html">My Blogs</a>
+      <a href="about.html">Return Policy</a>
     </div>
     <div class="footer-box">
       <h2>Newsletter</h2>
@@ -437,6 +439,7 @@
 
 
   <!--Link to Js-->
+  <script src="store.js"></script>
   <script src="home.js"></script>
 
 

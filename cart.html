@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart | EpicFoods</title>
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+  <header>
+    <a href="home.html" class="logo"><i class="bx bxs-basket"></i>Epic_Foods</a>
+    <ul class="navbar">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="categories.html">Categories</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="wishlist.html">Wishlist <span class="nav-badge" data-wishlist-count>0</span></a></li>
+      <li><a href="cart.html">Cart <span class="nav-badge" data-cart-count>0</span></a></li>
+      <li><a href="order.html">Order</a></li>
+    </ul>
+    <div class="profile" id="profile-trigger" role="button" tabindex="0" aria-haspopup="dialog"
+      aria-controls="auth-modal">
+      <img src="Images/profile.webp" alt="profile picture">
+      <span>Abdul Kareem</span>
+      <i class="bx bx-caret-down"></i>
+    </div>
+    <div class="bx bx-menu" id="menu-icon"></div>
+  </header>
+
+  <div class="auth-modal" id="auth-modal" aria-hidden="true">
+    <div class="auth-box" role="dialog" aria-modal="true" aria-labelledby="auth-title">
+      <button class="auth-close" id="auth-close" type="button" aria-label="Close login modal"><i
+          class="bx bx-x"></i></button>
+      <h2 id="auth-title">Welcome Back</h2>
+      <div class="auth-tabs" role="tablist" aria-label="Account access">
+        <button class="auth-tab active" type="button" data-auth-tab="login">Login</button>
+        <button class="auth-tab" type="button" data-auth-tab="signup">Sign Up</button>
+      </div>
+      <form class="auth-form active" id="login-form">
+        <input type="email" placeholder="Email address" required>
+        <input type="password" placeholder="Password" required>
+        <button class="btn auth-submit" type="submit">Login<i class="bx bx-right-arrow-alt"></i></button>
+      </form>
+      <form class="auth-form" id="signup-form">
+        <input type="text" placeholder="Full name" required>
+        <input type="email" placeholder="Email address" required>
+        <input type="password" placeholder="Create password" required>
+        <button class="btn auth-submit" type="submit">Create Account<i class="bx bx-right-arrow-alt"></i></button>
+      </form>
+    </div>
+  </div>
+
+  <main class="page-main">
+    <section class="page-hero compact">
+      <div class="page-hero-copy">
+        <span>Shopping cart</span>
+        <h1>Review your fresh food order</h1>
+        <p>Adjust quantities before moving to checkout.</p>
+        <a href="products.html" class="btn">Keep Shopping<i class="bx bx-right-arrow-alt"></i></a>
+      </div>
+      <img src="Images/broccoli.webp" alt="Broccoli crowns">
+    </section>
+
+    <section class="commerce-layout">
+      <div class="commerce-list" data-cart-list></div>
+      <aside class="summary-panel">
+        <h2>Order Summary</h2>
+        <div data-cart-summary></div>
+        <a href="order.html" class="btn checkout-btn" data-checkout-button>Checkout<i class="bx bx-right-arrow-alt"></i></a>
+      </aside>
+    </section>
+  </main>
+
+  <section class="footer" id="footer">
+    <div class="footer-box">
+      <a href="home.html" class="logo"><i class="bx bxs-basket"></i>Epic_Foods</a>
+      <p>18 Ibesikpo Street, Uyo, Akwa Ibom</p>
+      <div class="socials">
+        <a href="https://www.facebook.com/" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.tiktok.com/" aria-label="TikTok"><i class="bx bxl-tiktok"></i></a>
+        <a href="https://www.instagram.com/" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="https://www.linkedin.com/" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+    <div class="footer-box">
+      <h2>Categories</h2>
+      <a href="products.html?category=fruit-juice">Fruit Juice</a>
+      <a href="products.html?category=healthy-food">Healthy Food</a>
+      <a href="products.html?category=vegetables">Fruits & Vegetables</a>
+      <a href="products.html?category=drinks">Drinks</a>
+      <a href="products.html?category=spices">Spices</a>
+    </div>
+    <div class="footer-box">
+      <h2>Useful Links</h2>
+      <a href="cart.html">Payment Options</a>
+      <a href="order.html">Delivery Information</a>
+      <a href="about.html">Terms & Conditions</a>
+      <a href="about.html">My Blogs</a>
+      <a href="about.html">Return Policy</a>
+    </div>
+    <div class="footer-box">
+      <h2>Newsletter</h2>
+      <p>Subscribe to our newsletter for the latest updates and offers.</p>
+      <form>
+        <i class="bx bxs-envelope"></i>
+        <input type="email" placeholder="Enter your email">
+        <i class="bx bx-right-arrow-alt"></i>
+      </form>
+    </div>
+  </section>
+  <div class="copy-rights">
+    <p>&copy; 2026 <span>Epic_Foods</span>. All rights reserved.</p>
+  </div>
+
+  <script src="store.js"></script>
+  <script src="home.js"></script>
+</body>
+
+</html>
