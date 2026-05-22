@@ -1349,7 +1349,8 @@ header {
     background: var(--bg-color);
 }
 
-.story-points .bx {
+.story-points .bx,
+.policy-band .bx {
     color: var(--light-orange-color);
     font-size: 2rem;
 }
